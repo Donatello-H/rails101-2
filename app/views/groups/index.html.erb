@@ -5,9 +5,9 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <td>#</td>
-        <td>title</td>
-        <td>description</td>
+        <td>*我就是个点</td>
+        <td>我是标题</td>
+        <td>我是描述</td>
       </tr>
    </thead>
    <tbody>
@@ -16,8 +16,8 @@
          <td>*</td>
          <td><%= link_to(group.title, group_path(group)) %></td>
          <td><%= group.description %></td>
-         <td><%= link_to("edit", edit_group_path(group), class: "btn btn-sm btn-default")%>
-             <%= link_to("delete", group_path(group), class: "btn btn-sm btn-default", method: :delete, data: {comfirm: "are you sure?" } )%>
+         <td><%= link_to("编辑", edit_group_path(group), class: "btn btn-sm btn-default")%>
+             <%= link_to("删除", group_path(group), class: "btn btn-sm btn-default", method: :delete, data: {comfirm: "你真的确定要删除吗?" } )%>
          </td>
        </tr>
     <% end %>
