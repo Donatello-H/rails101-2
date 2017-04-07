@@ -1,0 +1,22 @@
+<%= form_for @group do |f| %>
+
+<% if @group.errors.any? %>
+<ul>
+  <% @group.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<h3>标题</h3>
+<br>
+<%= f.text_field :title %>
+<br>
+<h3>描述</h3>
+<br>
+<%= f.text_area :description %>
+<br>
+<br>
+
+<%= f.submit "Submit", :disable_with => 'Submiting...' %>
+<% end %>
