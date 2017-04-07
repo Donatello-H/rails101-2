@@ -1,0 +1,21 @@
+<div class="col-md-4 col-md-offset-4">
+  <h2>编辑内容</h2>
+
+  <hr>
+  <%= form_for @group do |f| %>
+  <h3>标题</h3>
+  <br>
+  <br>
+  <%= f.text_field :title %>
+  <br>
+  <br>
+  <h3>描述</h3>
+  <br>
+  <br>
+  <%= f.text_area :description %>
+  <br>
+  <br>
+
+  <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+  <% end %>
+</div>
